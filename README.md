@@ -13,7 +13,6 @@
 ## 🚀 Welcome to My GitHub!  
 I’m a **Robotics & Machine Learning Engineer** passionate about **autonomous systems, sensor fusion, and assistive robotics**.  
 With experience across **automotive (ADAS), medical devices, and space technologies**, I specialize in:  
-
 - 🚗 **Path Planning & Motion Control** – Trajectory optimization for mobile robots  
 - 🔍 **Perception & Sensor Fusion** – Kalman Filters, Optical Flow, Multi-Sensor Localization  
 - 🛠 **Embedded & ADAS Software** – CAN Bus, ECU Testing, Model-Based Development  
@@ -24,7 +23,7 @@ With experience across **automotive (ADAS), medical devices, and space technolog
 
 🚀 **Programming:** Python | C++ | MATLAB | Bash | CAPL  
 🤖 **Robotics Tools:** ROS | ROS2 | Gazebo | MoveIt | ArGoS | OpenCV  
-📡 **Hardware:** Intel RealSense | WidowX250S | Moorebot | Raspberry Pi | Arduino  
+📡 **Hardware:** Intel RealSense | WidowX250S | Raspberry Pi | Arduino  
 🔍 **Software & Frameworks:** Docker | Jenkins | AWS | TensorFlow | SciPy | Scikit-Learn  
 
 ---
@@ -34,7 +33,6 @@ With experience across **automotive (ADAS), medical devices, and space technolog
 🔹 🦾 **Assistive Feeding Robot** – AI-powered robotic feeding system for accessibility  
 🔹 🚗 **Optical Flow-Based DATMO** – Real-time object detection & tracking for autonomous driving  
 🔹 🌍 **Personalized Google Maps ETA** – Adaptive navigation speed estimation using sensor fusion  
-🔹 💨 **Air Quality Forecasting** – Time-series PM2.5 prediction using ML models  
 🔹 🛠 **Pillavate: Smart Pillow for CHF Patients** – Automated assistive device using Arduino & pulse oximetry  
 
 ---
