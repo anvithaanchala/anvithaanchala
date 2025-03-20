@@ -3,7 +3,6 @@
 🔭 **I’m currently working on:** Sensor Fusion & Autonomous Navigation  
 🌱 **I’m currently learning:** Reinforcement Learning  
 👯 **I’m looking to collaborate on:** Robotics & Perception Systems  
-🤔 **I’m looking for help with:** Deep Reinforcement Learning for Robotics  
 💬 **Ask me about:** Assistive Technologies, Sensor Fusion, SLAM  
 📫 **How to reach me:** [Email](mailto:anchala.a@northeastern.edu) | [LinkedIn](https://www.linkedin.com/in/anvitha-anchala/)  
 😄 **Pronouns:** She/Her  
