@@ -40,4 +40,3 @@ With experience across **automotive (ADAS), medical devices, and space technolog
 
 📧 **Email:** [anchala.a@northeastern.edu](mailto:anchala.a@northeastern.edu)  
 🔗 **LinkedIn:** [linkedin.com/in/anvitha-anchala/](https://www.linkedin.com/in/anvitha-anchala/)  
-🌍 **Website:** [www.anvithaanchala.com](https://www.anvithaanchala.com/)  
