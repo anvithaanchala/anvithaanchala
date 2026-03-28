@@ -7,44 +7,34 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9fe 100%);min-height:100vh;font-family:'Quicksand',sans-serif;color:#6b21a8;padding:40px 20px;overflow-x:hidden}
-
 .orb{position:fixed;border-radius:50%;filter:blur(90px);opacity:.25;pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
 .orb1{width:420px;height:420px;background:#f0abfc;top:-100px;left:-100px;animation-duration:16s}
 .orb2{width:300px;height:300px;background:#fbcfe8;top:40%;right:-80px;animation-duration:12s;animation-delay:-4s}
 .orb3{width:260px;height:260px;background:#ddd6fe;bottom:10%;left:20%;animation-duration:18s;animation-delay:-8s}
 @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(30px,40px) scale(1.08)}}
-
 .container{max-width:780px;margin:0 auto;position:relative;z-index:1}
-
 .hero{text-align:center;padding:60px 20px 50px}
 .avatar-ring{width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,#e879f9,#f9a8d4,#c084fc);padding:3px;margin:0 auto 24px;animation:spin-ring 8s linear infinite}
 @keyframes spin-ring{from{filter:hue-rotate(0deg)}to{filter:hue-rotate(360deg)}}
 .avatar-inner{width:100%;height:100%;border-radius:50%;background:#fdf2f8;display:flex;align-items:center;justify-content:center;font-size:42px}
-
 .hero h1{font-family:'Playfair Display',serif;font-size:2.6rem;font-weight:400;background:linear-gradient(90deg,#c026d3,#a855f7,#ec4899,#7c3aed);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:12px;animation:shimmer 4s ease-in-out infinite alternate;background-size:200%}
 @keyframes shimmer{from{background-position:0%}to{background-position:100%}}
-
 .tagline{font-size:1rem;color:#9333ea;font-style:italic;letter-spacing:.03em;margin-bottom:28px;line-height:1.8}
 .tagline span{color:#db2777}
-
 .typing-wrap{font-size:.95rem;color:#a855f7;margin-bottom:32px;min-height:28px}
 .cursor{display:inline-block;animation:blink .7s step-end infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
-
 .badges{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:48px}
 .badge{padding:6px 16px;border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;border:1px solid;transition:transform .2s,box-shadow .2s;cursor:default}
 .badge:hover{transform:translateY(-2px);box-shadow:0 4px 20px rgba(192,132,252,.25)}
 .b-purple{background:#f5e6ff;border-color:#d8b4fe;color:#7e22ce}
 .b-pink{background:#fce7f3;border-color:#fbcfe8;color:#9d174d}
 .b-lavender{background:#ede9fe;border-color:#c4b5fd;color:#5b21b6}
-
 .divider{height:1px;background:linear-gradient(90deg,transparent,rgba(192,132,252,.4),transparent);margin:48px 0}
-
 .section{margin-bottom:56px}
 .section-label{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#a855f7;margin-bottom:6px;font-weight:600}
 .section-title{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:400;color:#581c87;margin-bottom:24px}
 .section-title em{color:#db2777;font-style:italic}
-
 .card{background:rgba(255,255,255,.6);border:1px solid rgba(216,180,254,.4);border-radius:20px;padding:28px 30px;margin-bottom:20px;transition:transform .25s,border-color .25s,box-shadow .25s;position:relative;overflow:hidden;backdrop-filter:blur(6px)}
 .card::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(240,171,252,.08) 0%,transparent 60%);pointer-events:none}
 .card:hover{transform:translateY(-4px);border-color:rgba(192,132,252,.55);box-shadow:0 12px 40px rgba(192,132,252,.15)}
@@ -54,21 +44,17 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 .card p{font-size:.9rem;line-height:1.85;color:#7e22ce}
 .stack{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
 .chip{font-size:.72rem;padding:3px 10px;border-radius:6px;background:#f5e6ff;color:#6b21a8;border:1px solid #ddd6fe;font-weight:500}
-
 .sparkle{display:inline-block;animation:twinkle 2.4s ease-in-out infinite}
 @keyframes twinkle{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.8)}}
-
 .industry-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 @media(max-width:540px){.industry-grid{grid-template-columns:1fr}}
 .ind-card{background:rgba(255,255,255,.55);border:1px solid rgba(251,207,232,.5);border-radius:14px;padding:18px 20px;transition:border-color .2s,transform .2s;backdrop-filter:blur(4px)}
 .ind-card:hover{border-color:rgba(219,39,119,.3);transform:translateY(-2px)}
 .ind-name{font-weight:600;font-size:.9rem;color:#be185d;margin-bottom:5px}
 .ind-desc{font-size:.8rem;color:#9333ea;line-height:1.65}
-
 .skills-grid{display:flex;flex-wrap:wrap;gap:10px}
 .sk{padding:7px 16px;border-radius:10px;font-size:.8rem;font-weight:600;background:rgba(255,255,255,.55);border:1px solid rgba(216,180,254,.4);color:#6b21a8;transition:all .2s;backdrop-filter:blur(4px)}
 .sk:hover{background:#f5e6ff;border-color:#d8b4fe;transform:translateY(-2px)}
-
 .connect{text-align:center;padding:40px 20px}
 .connect p{color:#9333ea;font-size:.9rem;line-height:1.9;margin-bottom:24px;font-style:italic}
 .links{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
@@ -83,7 +69,6 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
-
 <canvas id="stars" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0"></canvas>
 
 <div class="container">
@@ -92,43 +77,43 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
     <div class="avatar-ring"><div class="avatar-inner">🤖</div></div>
     <h1>Anvitha Anchala</h1>
     <p class="tagline">
-      i teach machines to <span>see</span>, think, and move through the world<br>
-      then i go home and bake sourdough
+      Teaching machines to <span>see</span>, think, and move through the world.<br>
+      Also attempting sourdough with varying levels of success.
     </p>
     <div class="typing-wrap">
       <span id="typed"></span><span class="cursor">|</span>
     </div>
     <div class="badges">
-      <span class="badge b-purple">✦ robotics</span>
-      <span class="badge b-pink">✦ computer vision</span>
-      <span class="badge b-lavender">✦ sensor fusion</span>
-      <span class="badge b-purple">✦ she/her</span>
-      <span class="badge b-pink">✦ boston, ma</span>
-      <span class="badge b-lavender">✦ MS robotics @ northeastern</span>
+      <span class="badge b-purple">✦ Robotics</span>
+      <span class="badge b-pink">✦ Computer Vision</span>
+      <span class="badge b-lavender">✦ Sensor Fusion</span>
+      <span class="badge b-purple">✦ She/Her</span>
+      <span class="badge b-pink">✦ Boston, MA</span>
+      <span class="badge b-lavender">✦ MS Robotics @ Northeastern</span>
     </div>
   </div>
 
   <div class="divider"></div>
 
   <div class="section">
-    <div class="section-label">who i am</div>
-    <div class="section-title">a little about <em>me</em></div>
+    <div class="section-label">Who I Am</div>
+    <div class="section-title">A little about <em>me</em></div>
     <p style="color:#7e22ce;line-height:1.9;font-size:.95rem">
-      i'm a robotics and computer vision engineer who genuinely loves the moment when a system just <em style="color:#db2777">works</em>. when the camera sees what it's supposed to see, when the robot arm moves like it has intention, when the math behind the chaos finally clicks. i've shipped perception systems across medical devices, autonomous vehicles, aerospace, and sports analytics. outside the terminal i'm probably reading, experimenting with a new bake, or thinking about how to make technology more useful for people who actually need it. <span class="sparkle">✦</span>
+      I'm a robotics and computer vision engineer who gets unreasonably excited when a system finally just <em style="color:#db2777">works</em>. The camera sees what it's supposed to see. The robot arm moves like it has intention. The math behind the chaos suddenly makes sense. I've spent the last few years building perception systems for medical devices, autonomous vehicles, aerospace, and sports analytics. When I'm not at a keyboard, I'm probably reading, trying a new bake, or thinking about how technology could be more useful for the people who actually need it most. <span class="sparkle">✦</span>
     </p>
   </div>
 
   <div class="divider"></div>
 
   <div class="section">
-    <div class="section-label">things i've built</div>
-    <div class="section-title">projects i'm <em>proud of</em></div>
+    <div class="section-label">Things I've Built</div>
+    <div class="section-title">Projects I'm <em>proud of</em></div>
 
     <div class="card">
       <span class="card-emoji">🚗</span>
-      <h3>seeing the world move — optical flow DATMO</h3>
-      <div class="card-vibe">detection and tracking of moving objects for autonomous vehicles</div>
-      <p>i wanted to know if a car could understand a chaotic intersection the way a human driver does, not just detecting objects but predicting where they're going. built a full detection and tracking pipeline using LiDAR point clouds, DBSCAN clustering, and extended kalman filters running in real time. then i stress-tested it against published IEEE benchmarks inside CARLA simulation, because trusting your own system blindly felt wrong. spoiler: the published numbers weren't always right.</p>
+      <h3>Seeing the World Move — Optical Flow DATMO</h3>
+      <div class="card-vibe">Can a car understand an intersection the way a driver does?</div>
+      <p>I kept wondering what it would take for an autonomous vehicle to not just detect things, but actually anticipate where they're going. So I built a full pipeline: LiDAR point clouds, DBSCAN clustering, extended Kalman filters, all running in real time in CARLA simulation. Then I stress-tested it against published IEEE benchmarks, partly because trusting your own system blindly felt intellectually dishonest. Turns out the published numbers weren't always holding up either.</p>
       <div class="stack">
         <span class="chip">Python</span><span class="chip">ROS2</span><span class="chip">LiDAR</span><span class="chip">DBSCAN</span><span class="chip">EKF</span><span class="chip">CARLA</span>
       </div>
@@ -136,9 +121,9 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 
     <div class="card">
       <span class="card-emoji">🦾</span>
-      <h3>a robot that feeds you — assistive feeding arm</h3>
-      <div class="card-vibe">ai-powered robot for people with motor impairments</div>
-      <p>this one is personal. i wanted to build something that gives back independence, a robotic arm that watches your face, waits for you to open your mouth, and delivers a bite of food. sounds simple. it really isn't. paired a WidowX 250S arm with an Intel RealSense camera, wired MediaPipe Face Mesh to detect mouth-open in real time, and built the whole pipeline in ROS2 with MoveIt handling motion planning. 90% task success rate. under $5K. most meaningful thing i've built.</p>
+      <h3>A Robot That Feeds You — Assistive Feeding Arm</h3>
+      <div class="card-vibe">What if technology gave someone back something they lost?</div>
+      <p>This one started with a simple question: what if a robot could help someone eat a meal on their own? A WidowX 250S arm, an Intel RealSense camera, MediaPipe watching for a mouth to open, and a ROS2 + MoveIt pipeline putting it all together. It sounds like a tidy description. It was months of debugging, recalibrating, and testing with real people until it actually worked. 90% success rate. Under $5K. Probably the most meaningful thing I've built.</p>
       <div class="stack">
         <span class="chip">ROS2</span><span class="chip">MoveIt</span><span class="chip">MediaPipe</span><span class="chip">RealSense</span><span class="chip">WidowX 250S</span><span class="chip">OpenCV</span>
       </div>
@@ -146,9 +131,9 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 
     <div class="card">
       <span class="card-emoji">⛸️</span>
-      <h3>computer vision on ice — figure skating analysis</h3>
-      <div class="card-vibe">real-time athlete tracking and pose estimation, deployed to ios</div>
-      <p>what if you could break down a triple axel frame by frame? built an end-to-end CV pipeline for athlete motion analysis on live figure skating footage. RT-DETR for detection, ByteTrack across occlusion-heavy ice rink scenes, RTMPose for biomechanical keypoints, and a custom ResNet-34 to segment the ice surface itself. ships to coaches on their phones via cloud inference.</p>
+      <h3>Computer Vision on Ice — Figure Skating Analysis</h3>
+      <div class="card-vibe">What does a triple axel look like, frame by frame?</div>
+      <p>Built a real-time CV pipeline for analyzing athlete movement on live figure skating footage. RT-DETR for detection, ByteTrack through all the occlusion chaos of an ice rink, RTMPose for biomechanical keypoints, and a custom ResNet-34 to segment the ice surface itself. Coaches get it straight to their phones. It's one of those projects where the domain made every technical problem feel worth solving.</p>
       <div class="stack">
         <span class="chip">RT-DETR</span><span class="chip">ByteTrack</span><span class="chip">RTMPose</span><span class="chip">ResNet-34</span><span class="chip">PyTorch</span><span class="chip">iOS</span>
       </div>
@@ -156,9 +141,9 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 
     <div class="card">
       <span class="card-emoji">💜</span>
-      <h3>a pillow that listens — pillavate</h3>
-      <div class="card-vibe">smart assistive device for CHF patients</div>
-      <p>congestive heart failure patients often wake in the night struggling to breathe, and the right pillow angle can genuinely help. pillavate monitors SpO2 and heart rate via pulse oximetry and automatically adjusts elevation using a servo motor. built on Arduino. small thing, real impact.</p>
+      <h3>A Pillow That Listens — Pillavate</h3>
+      <div class="card-vibe">Small hardware, real difference</div>
+      <p>People with congestive heart failure often wake up in the night struggling to breathe, and sometimes the right pillow angle is enough to help. Pillavate monitors SpO2 and heart rate through pulse oximetry and quietly adjusts its elevation with a servo motor. It's an Arduino project. It's not glamorous. But it's the kind of thing I find myself most drawn to: small, grounded, and actually useful to someone.</p>
       <div class="stack">
         <span class="chip">Arduino</span><span class="chip">Pulse Oximetry</span><span class="chip">Servo Control</span><span class="chip">Embedded C</span>
       </div>
@@ -169,25 +154,25 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
   <div class="divider"></div>
 
   <div class="section">
-    <div class="section-label">where i've been</div>
-    <div class="section-title">the places that <em>shaped me</em></div>
-    <p style="color:#9333ea;line-height:1.9;font-size:.88rem;margin-bottom:20px">i've been lucky enough to work on systems where getting it wrong actually matters.</p>
+    <div class="section-label">Where I've Been</div>
+    <div class="section-title">Places that <em>shaped me</em></div>
+    <p style="color:#9333ea;line-height:1.9;font-size:.88rem;margin-bottom:20px">I've been lucky to work on things where getting it wrong actually has consequences.</p>
     <div class="industry-grid">
       <div class="ind-card">
         <div class="ind-name">🛰 ISRO</div>
-        <div class="ind-desc">aerospace automation at ±2mm precision, safety-critical systems with zero margin for error</div>
+        <div class="ind-desc">Aerospace automation at ±2mm precision. Safety-critical systems that have to work, full stop.</div>
       </div>
       <div class="ind-card">
         <div class="ind-name">🚘 Hyundai Mobis</div>
-        <div class="ind-desc">level-3 ADAS across 50+ vehicle platforms, perception that has to work in the rain at 100km/h</div>
+        <div class="ind-desc">Level-3 ADAS across 50+ vehicle platforms. Perception in the rain, at speed, on real roads.</div>
       </div>
       <div class="ind-card">
         <div class="ind-name">🔬 MethodAI</div>
-        <div class="ind-desc">surgical navigation, tracked down a 160ms sensor lag causing 1.23mm positioning drift in the OR</div>
+        <div class="ind-desc">Surgical navigation. Tracked a 160ms sensor lag that was causing 1.23mm positioning drift in the OR.</div>
       </div>
       <div class="ind-card">
         <div class="ind-name">⛸️ Athlitix</div>
-        <div class="ind-desc">real-time CV for figure skating analytics, shipped to coaches on iOS</div>
+        <div class="ind-desc">Real-time CV for figure skating analytics, shipped to coaches on iOS.</div>
       </div>
     </div>
   </div>
@@ -195,8 +180,8 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
   <div class="divider"></div>
 
   <div class="section">
-    <div class="section-label">the toolkit</div>
-    <div class="section-title">what i work <em>with</em></div>
+    <div class="section-label">The Toolkit</div>
+    <div class="section-title">What I work <em>with</em></div>
     <div class="skills-grid">
       <span class="sk">Python</span><span class="sk">C++</span><span class="sk">MATLAB</span>
       <span class="sk">ROS / ROS2</span><span class="sk">OpenCV</span><span class="sk">PyTorch</span>
@@ -209,9 +194,9 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
   <div class="divider"></div>
 
   <div class="connect">
-    <p>always happy to talk robots, perception, assistive tech,<br>or whatever you're building <span class="sparkle">✦</span></p>
+    <p>Always happy to talk robots, perception, assistive tech,<br>or whatever you're currently obsessing over. <span class="sparkle">✦</span></p>
     <div class="links">
-      <a class="link-btn primary" href="https://www.linkedin.com/in/anvitha-anchala/">LinkedIn</a>
+      <a class="link-btn primary" href="https://www.linkedin.com/in/anvithaanchala/">LinkedIn</a>
       <a class="link-btn secondary" href="mailto:anchala.a@northeastern.edu">Email</a>
     </div>
   </div>
@@ -246,11 +231,11 @@ function drawStars(){
 drawStars();
 
 const phrases=[
-  "building robots that see the world 🤖",
-  "sensor fusion and real-time CV 👁",
-  "making assistive tech that matters 💜",
-  "currently: job hunting in boston ✦",
-  "also: perfecting sourdough 🍞"
+  "Building robots that see the world 🤖",
+  "Sensor fusion and real-time CV 👁",
+  "Making assistive tech that actually matters 💜",
+  "Currently: job hunting in Boston ✦",
+  "Also: perfecting sourdough 🍞"
 ];
 let pi=0,ci=0,deleting=false;
 const el=document.getElementById('typed');
