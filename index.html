@@ -6,6 +6,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
+#cursor{position:fixed;pointer-events:none;z-index:9999;transform:translate(-8px,-8px);font-size:22px;line-height:1;transition:transform .08s ease}
+#cursor.big{transform:translate(-8px,-8px) scale(1.4)}
+.glitter{position:fixed;pointer-events:none;z-index:9998;font-size:11px;animation:glitterFade .8s ease forwards}
+@keyframes glitterFade{0%{opacity:1;transform:translate(-50%,-50%) scale(1) rotate(0deg)}100%{opacity:0;transform:translate(-50%,-50%) scale(0) rotate(180deg)}}
 body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9fe 100%);min-height:100vh;font-family:'Quicksand',sans-serif;color:#6b21a8;padding:40px 20px;overflow-x:hidden}
 .orb{position:fixed;border-radius:50%;filter:blur(90px);opacity:.25;pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
 .orb1{width:420px;height:420px;background:#f0abfc;top:-100px;left:-100px;animation-duration:16s}
@@ -66,6 +70,7 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 </style>
 </head>
 <body>
+<div id="cursor">🐱</div>
 <div class="orb orb1"></div>
 <div class="orb orb2"></div>
 <div class="orb orb3"></div>
@@ -74,13 +79,12 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 <div class="container">
 
   <div class="hero">
-    <div class="avatar-ring"><div class="avatar-inner">🤖</div></div>
     <h1>Anvitha Anchala</h1>
     <p class="tagline">
       Teaching machines to <span>see</span>, think, and move through the world.<br>
-      Also attempting sourdough with varying levels of success.
+      Also hiking trails and baking things that may or may not turn out.
     </p>
-    <div class="typing-wrap">
+<div class="typing-wrap">
       <span id="typed"></span><span class="cursor">|</span>
     </div>
     <div class="badges">
@@ -182,12 +186,18 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
   <div class="section">
     <div class="section-label">The Toolkit</div>
     <div class="section-title">What I work <em>with</em></div>
-    <div class="skills-grid">
-      <span class="sk">Python</span><span class="sk">C++</span><span class="sk">MATLAB</span>
-      <span class="sk">ROS / ROS2</span><span class="sk">OpenCV</span><span class="sk">PyTorch</span>
-      <span class="sk">TensorRT</span><span class="sk">ONNX</span><span class="sk">MoveIt</span>
-      <span class="sk">Gazebo</span><span class="sk">Docker</span><span class="sk">AWS</span>
-      <span class="sk">Kalman Filters</span><span class="sk">SLAM</span><span class="sk">Sensor Fusion</span>
+    <div style="background:rgba(255,255,255,.55);border:1px solid rgba(216,180,254,.4);border-radius:16px;padding:24px 28px;backdrop-filter:blur(6px);font-family:'Courier New',monospace;font-size:.85rem;line-height:2;overflow-x:auto">
+      <span style="color:#be185d">const</span> <span style="color:#581c87;font-weight:700">anvitha</span> <span style="color:#a855f7">=</span> {<br>
+      &nbsp;&nbsp;<span style="color:#db2777">pronouns</span>: <span style="color:#9333ea">"she / her"</span>,<br>
+      &nbsp;&nbsp;<span style="color:#db2777">based</span>: <span style="color:#9333ea">"Boston, MA"</span>,<br>
+      &nbsp;&nbsp;<span style="color:#db2777">languages</span>: [<span style="color:#9333ea">"Python"</span>, <span style="color:#9333ea">"C++"</span>, <span style="color:#9333ea">"MATLAB"</span>],<br>
+      &nbsp;&nbsp;<span style="color:#db2777">robotics</span>: [<span style="color:#9333ea">"ROS / ROS2"</span>, <span style="color:#9333ea">"MoveIt"</span>, <span style="color:#9333ea">"Gazebo"</span>],<br>
+      &nbsp;&nbsp;<span style="color:#db2777">vision</span>: [<span style="color:#9333ea">"OpenCV"</span>, <span style="color:#9333ea">"PyTorch"</span>, <span style="color:#9333ea">"TensorRT"</span>, <span style="color:#9333ea">"ONNX"</span>],<br>
+      &nbsp;&nbsp;<span style="color:#db2777">sensorFusion</span>: [<span style="color:#9333ea">"Kalman Filters"</span>, <span style="color:#9333ea">"SLAM"</span>, <span style="color:#9333ea">"LiDAR"</span>, <span style="color:#9333ea">"IMU"</span>],<br>
+      &nbsp;&nbsp;<span style="color:#db2777">infrastructure</span>: [<span style="color:#9333ea">"Docker"</span>, <span style="color:#9333ea">"AWS"</span>, <span style="color:#9333ea">"Linux"</span>],<br>
+      &nbsp;&nbsp;<span style="color:#db2777">currentlyLearning</span>: [<span style="color:#9333ea">"Reinforcement Learning"</span>, <span style="color:#9333ea">"VLA models"</span>],<br>
+      &nbsp;&nbsp;<span style="color:#db2777">outsideTheTerminal</span>: [<span style="color:#9333ea">"sourdough baking"</span>, <span style="color:#9333ea">"reading"</span>, <span style="color:#9333ea">"making things useful"</span>],<br>
+      }<br>
     </div>
   </div>
 
@@ -204,6 +214,31 @@ body{background:linear-gradient(135deg,#fdf2f8 0%,#f5e6ff 30%,#fce7f3 60%,#ede9f
 </div>
 
 <script>
+const cursor = document.getElementById('cursor');
+const glitters = ['✨','⭐','💫','🌟','✦','❀','·'];
+const colors  = ['#f0abfc','#fbcfe8','#ddd6fe','#e879f9','#f9a8d4','#c4b5fd'];
+let lastX=0,lastY=0;
+document.body.style.cursor='none';
+document.addEventListener('mousemove',e=>{
+  cursor.style.left=e.clientX+'px';
+  cursor.style.top=e.clientY+'px';
+  const dx=e.clientX-lastX, dy=e.clientY-lastY;
+  if(Math.abs(dx)+Math.abs(dy)>6){
+    for(let i=0;i<2;i++){
+      const g=document.createElement('div');
+      g.className='glitter';
+      g.textContent=glitters[Math.floor(Math.random()*glitters.length)];
+      g.style.cssText=`left:${e.clientX+( Math.random()*24-12)}px;top:${e.clientY+(Math.random()*24-12)}px;color:${colors[Math.floor(Math.random()*colors.length)]};animation-delay:${Math.random()*.15}s`;
+      document.body.appendChild(g);
+      setTimeout(()=>g.remove(),900);
+    }
+    lastX=e.clientX;lastY=e.clientY;
+  }
+});
+document.querySelectorAll('a,button,.card,.badge,.sk,.ind-card').forEach(el=>{
+  el.addEventListener('mouseenter',()=>cursor.classList.add('big'));
+  el.addEventListener('mouseleave',()=>cursor.classList.remove('big'));
+});
 const canvas = document.getElementById('stars');
 const ctx = canvas.getContext('2d');
 function resize(){canvas.width=window.innerWidth;canvas.height=window.innerHeight}
